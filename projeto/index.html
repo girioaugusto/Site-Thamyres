@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Intercâmbio Thamyres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PLAYER DE ÁUDIO INVISÍVEL -->
+<audio id="musica" autoplay loop>
+    <source src="sons/company.mp3" type="audio/mpeg">
+</audio>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Intercâmbio Thamyres</h1>
+        <p id="mensagem-dia" class="frase-animada"></p>
+    </div>
+</header>
+  
+<nav>
+    <a href="index.html">Home</a>
+    <a href="diario.html">Diário</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="beijinhos.html">Beijinhos & Abraços</a>
+    <a href="pessoas.html">Apoio</a>
+    <a href="familia.html">Mensagem Familia</a>
+    <a href="login.html" onclick="sessionStorage.removeItem('auth')">Sair</a>
+</nav>
+
+<main class="content">
+
+    <!-- Seção de mensagem principal -->
+    <section class="mensagem-principal">
+        <h2>Para você, Thamyres 💛</h2>
+        <p>
+            Amor, esse cantinho é só seu. Cada lugar novo que você conhece, cada história que você vive 
+            enche meu coração de orgulho. Mesmo longe, você continua sendo a parte mais perto de mim em 
+            qualquer lugar do mundo. Este site é só uma forma simples de te lembrar que eu tô sempre aqui, 
+            torcendo por você em cada passo desse sonho.
+        </p>
+
+        <button onclick="document.getElementById('mensagem-completa').scrollIntoView({ behavior: 'smooth' });">
+            Explorar mensagem
+        </button>
+    </section>
+
+    <!-- Seção da mensagem completa -->
+    <section id="mensagem-completa" class="mensagem-completa">
+        <h2>Uma mensagem pra você ✨</h2>
+        <p>
+            Quando você decidiu embarcar nesse intercâmbio, eu entendi ainda mais o tamanho da sua coragem.
+            Não é só sobre viajar: é sobre se jogar no desconhecido, crescer, aprender e se transformar.
+        </p>
+        <p>
+            Eu sei que nem todos os dias aí vão ser fáceis, mas quero que você nunca se esqueça:
+            você não está sozinha. Em cada conquista, em cada dúvida, em cada saudade,
+            tem alguém aqui do outro lado do mundo pensando em você e torcendo por você.
+        </p>
+        <p>
+            O mundo é enorme, mas, mesmo assim, você continua sendo o meu lugar favorito.
+        </p>
+        <p>
+            Vai, vive tudo o que você merece viver. E, quando voltar, a gente vai ter um universo de histórias
+            pra lembrar juntinhos.
+        </p>
+    </section>
+
+    <section class="timeline">
+        <h2 class="timeline-title">Linha do tempo da Thamyres 🌍</h2>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-data">2024</div>
+            <div class="timeline-conteudo">
+                <h3>Primeira grande aventura em NYC</h3>
+                <p>Pisar em Nova York foi sentir que o mundo é muito maior do que os nossos planos.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-data">2024</div>
+            <div class="timeline-conteudo">
+                <h3>Formatura em Psicologia 🎓</h3>
+                <p>Anos de estudo transformados em diploma e novas possibilidades.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-data">2025</div>
+            <div class="timeline-conteudo">
+                <h3>Início da trajetória profissional</h3>
+                <p>Atendendo, ouvindo e fazendo o mundo um lugar mais leve.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-data">2025</div>
+            <div class="timeline-conteudo">
+                <h3>Jornada fora do Brasil</h3>
+                <p>Um novo país, novas rotinas e coragem em cada escolha.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-data">Em breve...</div>
+            <div class="timeline-conteudo">
+                <h3>Novos destinos</h3>
+                <p>A vida ainda tem muitos capítulos lindos reservados pra você.</p>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+    // Safari/iPhone fix — precisa dar play após interação
+    document.addEventListener("click", () => {
+        const m = document.getElementById("musica");
+        if (m.paused) m.play().catch(()=>{});
+    }, { once: true });
+</script>
+
+</body>
+</html>

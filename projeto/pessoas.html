@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoas importantes – Intercâmbio Thamyres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Proteção: login -->
+<script>
+    if (!sessionStorage.getItem("auth")) {
+        window.location.href = "login.html";
+    }
+</script>
+
+<header class="hero hero-small">
+    <h1>As pessoas que caminham com você 💞</h1>
+    <p class="frase-animada">
+        Mesmo longe de casa, você segue rodeada de amor.
+    </p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="diario.html">Diário</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="beijinhos.html">Beijinhos & Abraços</a>
+    <a href="pessoas.html">Apoio</a>
+    <a href="familia.html">Mensagem Familia</a>
+    <a href="login.html" onclick="sessionStorage.removeItem('auth')">Sair</a>
+</nav>
+
+<main class="content">
+
+    <!-- INTRO -->
+    <section class="card pessoas-intro">
+        <h2 id="title-pessoas">Você nunca esteve sozinha nessa história ✨</h2>
+        <p>
+            Esse intercâmbio é seu, mas também pertence às pessoas que acreditam em você.
+            Aqueles que vibram com cada conquista, que cuidam de você de perto ou de longe,
+            e que fazem parte da sua vida de um jeito único.
+        </p>
+    </section>
+
+
+    <!-- AMIGOS -->
+    <section class="card bloco-pessoas">
+        <div class="tag-pessoas">Amigos que viraram família 💜</div>
+
+        <div class="people-layout">
+            <img src="imagens/amigos2.jpeg" alt="Thamyres com amigos no intercâmbio">
+
+            <div class="texto-pessoas">
+                <h3>Amigos do intercâmbio</h3>
+                <p>
+                    No intercâmbio, a amizade vira abrigo. São as pessoas que dividem o dia a dia,
+                    o frio, as histórias, a saudade e até os momentos de silêncio que trazem conforto. Com eles, cada aventura vira lembrança boa. Cada desafio vira aprendizado.
+                    E cada risada vira um pedacinho de casa criado longe do Brasil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VOCÊS DOIS -->
+    <section class="card bloco-pessoas">
+        <div class="tag-pessoas">Nós dois e os pequenos 💍🐶</div>
+
+        <div class="people-layout invert">
+            <div class="texto-pessoas">
+                <h3>O noivo que está sempre do seu lado</h3>
+                <p>
+                    A distância nunca foi capaz de diminuir o que existe entre nós.
+                    As conversas, as mensagens, os planos e o cuidado continuam sendo parte da nossa rotina,
+                    independente de onde cada um esteja.
+                </p>
+                <p>
+                    E no meio de tudo isso existe a família que estamos construindo:
+                    Sultão, Chelsea, Luxor e Ásia. Eles enchem nossa vida de amor,
+                    bagunça gostosa e a sensação de lar que sempre buscamos.
+                </p>
+                <p>
+                    A cada passo seu, estamos mais próximos da vida que sonhamos.
+                </p>
+            </div>
+
+            <img src="imagens/Eu_thamyres.jpeg" alt="Augusto e Thamyres com os cachorrinhos">
+        </div>
+    </section>
+
+
+    <!-- FAMÍLIA QUE ACOLHE -->
+    <section class="card bloco-pessoas">
+        <div class="tag-pessoas">Família💛</div>
+
+        <div class="people-layout">
+            <img src="imagens/familia.jpeg" alt="Thamyres com a família do Augusto">
+
+            <div class="texto-pessoas">
+                <h3>Família</h3>
+                <p>
+                    Nesta foto está uma parte essencial do seu mundo.  
+                    Pessoas que te amam de verdade e que carregam um carinho infinito por você:
+                    seu pai, sua mãe e eu.  
+                    Cada um de nós, do nosso jeitinho, sempre faz questão de cuidar, apoiar,
+                    ouvir e estar presente em cada passo da sua vida.
+                </p>
+                <p>
+                    Mesmo longe, seguimos aqui por você na alegria, nos dias difíceis, nas
+                    conquistas e nos momentos de saudade.  
+                    Você é motivo de orgulho, é luz na nossa vida e é amada muito mais do que
+                    consegue imaginar.
+                    Nunca duvide disso: nós estaremos ao seu lado hoje, amanhã e sempre.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAMÍLIA DE SANGUE -->
+    <section class="card bloco-pessoas">
+        <div class="tag-pessoas">Família de sangue 🧬</div>
+
+        <div class="people-layout invert">
+            <div class="texto-pessoas">
+                <h3>A família que te viu nascer e te vê crescer</h3>
+                <p>
+                    Nesta foto está sua primeira casa: sua mãe, seu pai e sua irmã Ariane.
+                    Eles acompanham sua vida desde o início e conhecem cada detalhe da sua história,
+                    das suas vitórias e dos seus desafios.
+                </p>
+                <p>
+                    Eles são sua base, sua força e a certeza de que você sempre terá um lar esperando
+                    por você, onde quer que a vida te leve.
+                </p>
+            </div>
+
+            <img src="imagens/familia2.jpeg" alt="Thamyres com sua família no aeroporto">
+        </div>
+    </section>
+
+
+    <!-- FECHAMENTO -->
+    <section class="card pessoas-intro">
+        <h2>Seu mundo é feito de muitos mundos 🌎</h2>
+        <p>
+            Todos caminham com você.  
+            Quando bater saudade, lembra que aqui está o retrato de tudo o que te constrói:
+            amigos e família
+        </p>
+        <p>
+            Você nunca está sozinha.  
+            E nunca vai estar.
+        </p>
+    </section>
+
+</main>
+
+</body>
+</html>
