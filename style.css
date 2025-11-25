@@ -40,15 +40,15 @@ body {
 
 .hero {
     width: 100%;
-    min-height: 55vh;
-    max-height: 620px;
+    min-height: 100vh;
+    max-height: 800px;
 
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%),
         url("imagens/toronto.png");
 
     background-size: cover;
-    background-position: 50% 25%;
+    background-position: center 29%;
     background-repeat: no-repeat;
 
     display: flex;
@@ -844,7 +844,7 @@ html, body {
 }
 
 .login-card input {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
