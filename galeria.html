@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Passeios em Toronto - Intercâmbio Thamyres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+    if (!sessionStorage.getItem("auth")) {
+        window.location.href = "login.html";
+    }
+</script>
+
+<header class="hero hero-small">
+    <h1>Passeios em Toronto 🍁</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="diario.html">Diário</a>
+    <a href="galeria.html">Passeios</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="beijinhos.html">Beijinhos & Abraços</a>
+    <a href="pessoas.html">Apoio</a>
+    <a href="familia.html">Mensagem Familia</a>
+    <a href="login.html" onclick="sessionStorage.removeItem('auth')">Sair</a>
+</nav>
+
+<main class="content">
+
+    <!-- INTRO -->
+    <section class="card">
+        <h2>Explorando Toronto</h2>
+        <p class="texto-explicacao">
+            Uma lista cheia de ideias pra você aproveitar Toronto: cafés, parques,
+            pontos turísticos, brechós estilosos, bairros culturais e restaurantes famosos.
+            Use os filtros abaixo pra escolher o tipo de passeio que combina com o seu dia. ✨
+        </p>
+
+        <!-- FILTROS -->
+        <div class="filtros">
+            <button class="filtro-btn ativo" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="turismo">Turísticos</button>
+            <button class="filtro-btn" data-categoria="parques">Parques</button>
+            <button class="filtro-btn" data-categoria="brechos">Brechós</button>
+            <button class="filtro-btn" data-categoria="restaurantes">Restaurantes</button>
+            <button class="filtro-btn" data-categoria="cultura">Cultura</button>
+        </div>
+    </section>
+
+    <!-- LISTA DE PASSEIOS (preenchida via JS) -->
+    <section class="card">
+        <h2>Passeios</h2>
+
+        <div class="passeios-grid" id="passeios-grid">
+            <!-- Os cards serão gerados pelo galeria.js -->
+        </div>
+    </section>
+
+</main>
+
+<script src="galeria.js"></script>
+</body>
+</html>
